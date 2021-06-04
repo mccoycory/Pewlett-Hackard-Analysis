@@ -93,3 +93,8 @@ SELECT COUNT(title), title
 from new_hires
 GROUP BY (title)
 order by count(title) desc
+
+Select count(employees.hire_date), employees.hire_date
+from employees 
+group by (employees.hire_date)
+order by employees.hire_date desc;
